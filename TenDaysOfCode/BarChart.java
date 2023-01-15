@@ -1,4 +1,4 @@
-package ChapterFive;
+package TenDaysOfCode;
 
 import java.util.Scanner;
 
@@ -25,8 +25,9 @@ public class BarChart {
 
         for (i = 1; i <= num2; i++) {
             System.out.print("*");
-            System.out.println();
         }
+            System.out.println();
+
         for (i = 1; i <= num3; i++) {
             System.out.print("*");
         }

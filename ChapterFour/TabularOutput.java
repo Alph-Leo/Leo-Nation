@@ -1,20 +1,19 @@
 package ChapterFour;
 
-import java.util.Scanner;
-
 public class TabularOutput {
-
+   static int maximum;
+   static int minimum;
     public static void main(String[] args) {
 
-        double principal = 1000.0;
-        double rate = 0.05;
+        int counter = 1;
+       for (counter = 1; counter <= 10; counter++ )
+           if (maximum < counter){
+               maximum = counter;
+           }
+       if (minimum > counter){
+           minimum = counter;
+       }
+        System.out.printf("Maximum is:%n%d%nMinimum is: %n%d", maximum, minimum);
 
-        System.out.printf("%s%20s%n", "Year", "Amount on deposit");
-
-        for (int year = 1; year <= 10; year++) {
-            double amount = principal * Math.pow(1.0 + rate, year);
-
-            System.out.printf("%4d%,20.2f%n", year, amount);
-        }
     }
 }
